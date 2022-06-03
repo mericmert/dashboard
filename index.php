@@ -34,7 +34,7 @@ session_start();
     <div class="homepage-container">
       <?php include './components/navbar.php'?>
       <div class="content">
-        <?php //include './router/router.php'?>
+        <?php include './router/router.php'?>
       </div>
     </div>
     <?php //include './components/employerForm.php' ?>
