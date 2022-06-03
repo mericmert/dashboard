@@ -1,0 +1,63 @@
+.table-header{
+    background-color: var(--primary-color);
+    color: rgb(248, 247, 247);   
+    margin-bottom: 5em;
+}
+.table-container{
+    overflow-x: auto;
+    padding: 0 25px;
+    width: 90%;
+    height: 100%;
+    font-family: "Raleway";
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+.table-container tr button{
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.table-container tr button i:hover{
+    color: rgb(70, 68, 68);
+}
+#add-employee{
+    font-family: "Rubik";
+    width: 120px;
+    height: 30px;
+    color: rgb(248, 247, 247);   
+    margin-bottom: 0.5em;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px;
+    background: linear-gradient(to right, rgb(29, 28, 28),rgb(65, 65, 65));
+}
+
+#add-employee:hover{
+    background: linear-gradient(to right, rgb(70, 68, 68),rgb(65, 65, 65));
+}
+
+
+.edit-form{
+    margin-left: 4em;
+}
+.edit-form label {
+    font-family: "Raleway" !important;
+    font-size: 1rem !important;
+}
+
+.edit-form input{
+    width: 40% !important;
+}
+
+.edit-form button {
+    color: rgb(248, 247, 247) !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+.edit-form button:hover{
+    background-color: rgb(46, 44, 44) !important;
+}

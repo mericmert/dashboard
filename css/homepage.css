@@ -1,0 +1,273 @@
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    height: calc(100% - 5vh);
+}
+
+.homepage-container{
+    display: flex;
+    width: 100%;
+}
+.content{
+    transition: transform 0.5s;
+    width: calc(100%);
+    padding-top: 30px;
+
+}
+
+.main-line{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.homepage-stats{
+    margin: auto;
+    border-radius: 20px;
+    width: 99%;
+    height: 180px ;
+    background-color: rgb(235,235,235);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pie{
+    height: 220px;
+    width: 400px;
+    z-index: 3;
+}
+
+.modal-input{
+    width: 40%;
+    height: 60px;
+    outline: none;
+    border: 0;
+}
+
+
+.graph-container{
+    width: 100%;
+    min-height:420px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 2em;
+    column-gap: 30px;
+    row-gap: 12px;
+}
+
+.chart-container{
+    height: 400px;
+    width: 500px;
+    background-color: rgb(235,235,235);
+    border-radius: 5px;
+}
+
+#bar-chart{
+    background-color: rgb(235,235,235);
+}
+
+.feature-out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    background-color: gainsboro;
+    box-shadow: 1px 1px 10px -2px #888;
+    border-radius: 100%;
+    width: 96px;
+    height: 96px;
+}
+.feature-text{
+    color: rgb(70, 69, 69);
+    font-family: "Rubik";
+    margin-top: .7em;
+    font-size: 1.5rem;
+}
+#chart-icon{
+    color: rgb(220,53,69);
+}
+.shipping{
+    color: rgb(66, 66, 66);
+}
+.check {
+    color: green;
+}
+
+.card-container{
+    column-gap: 24px;
+    row-gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    width : 100%;
+    height: 15%;
+}
+
+.employee-card{
+    border-radius: 6px;
+    color: white;
+    font-family: "Rubik";
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 180px;
+    background-color: rgb(23,162,184);
+    
+}
+
+.employee-card:nth-child(2){
+    background-color: rgb(251,201,5);
+}
+.employee-card:nth-child(2) .employee-top i {
+    color : rgb(229,173,6);
+}
+.employee-card:nth-child(2) button {
+    background-color: rgb(229,173,6);
+}
+
+.employee-top{
+    padding:8px;
+    display: flex;
+    height: 85%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee-top i{
+    display: flex;
+    color: rgb(21,145,165);
+    font-size: 5rem !important;
+}
+.employee-card a {
+    padding-top: .4em;
+    text-align: right;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.employee-card button {
+    height: 15%;
+    color: rgb(240, 234, 234);
+    background-color: rgb(21,145,165);
+    font-size: 1rem;
+    border-radius: 0 0 4px 4px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.main-container{
+    display: flex;
+}
+.left-container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-container{
+    position: relative;
+    width: 25%;
+    height: auto;
+}
+
+.right-container button {
+    color: #ebebeb;
+    background:none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.right-container button:nth-child(2){
+    position: absolute !important;
+    z-index: 5;
+    top: 15px;
+    right: 45px;
+    transition: transform .5s;
+}
+.todo-container table thead th{
+    background-color: rgb(58, 58, 58) !important;
+    color: #ebebeb !important;
+}
+.todo-container table tbody{
+    background-color: #ebebeb !important;
+}
+
+.todo-container{
+    position: relative;
+    height: auto;
+    max-height: 620px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+
+.todo-container thead {
+    
+    position: sticky;
+    top: 0;
+}
+
+#modal{
+    background-color: red;
+    
+}
+
+
+@media only screen and (max-width:767px) {
+   .homepage-container{
+       padding-right: 45px;
+   }
+
+   .graph-container{
+       justify-content: center;
+       align-items: center;
+   }
+ }
+
+ @media only screen and (max-width:875px) {
+    .card-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .right-container{
+        width: 95%;
+    }
+  }
+
+ @media only screen and (max-width:1700px) {
+    .card-container{
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  @media only screen and (max-width:1600px) {
+    .graph-container{
+        justify-content: center;
+        align-items: center;
+    }
+  }

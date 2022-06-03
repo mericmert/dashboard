@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+:root{
+    --primary-color: #1b1c1d;
+    --secondary-color: #2b2c2e;
+    font-family: 'Rubik', Raleway', sans-serif;
+}
+
+html{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background-color: rgb(223, 223, 223);
+}
+
+
+.hidden > *{
+    display: none !important;
+}
+
+.shown{
+    display: block;
+}
