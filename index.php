@@ -37,7 +37,7 @@ session_start();
         <?php include './router/router.php'?>
       </div>
     </div>
-    <?php //include './components/employerForm.php' ?>
+    <?php include './components/employerForm.php' ?>
   </div>
 </body>
 

@@ -8,5 +8,4 @@
     if($dbconnect->connect_error){
         die("Database connection Failed: ". $dbconnect.connect_error);
     }
-    $_SESSION["dbconnect"] = $dbconnect;
 ?>
