@@ -3,7 +3,7 @@ $routes = [];
 
 /*route("/", function() {
     include dirname(__FILE__) . "/../pages/homepage.php" ;
-});*/
+});
 
 route("/employees", function() {
     include dirname(__FILE__) . "/../pages/employees.php" ;
@@ -11,6 +11,10 @@ route("/employees", function() {
 
 route("/edit", function() {
     include dirname(__FILE__) . "/../pages/edit.php" ;
+});*/
+
+route("/deneme", function() {
+    include dirname(__FILE__) . "/../pages/deneme.php" ;
 });
 
 function route(string $path, callable $callback){
