@@ -1,9 +1,9 @@
 <?php
 $routes = [];
 
-route("/", function() {
+/*route("/", function() {
     include dirname(__FILE__) . "/../pages/homepage.php" ;
-});
+});*/
 
 route("/employees", function() {
     include dirname(__FILE__) . "/../pages/employees.php" ;
