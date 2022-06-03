@@ -24,7 +24,6 @@ run();
 function run(){
     global $routes;
     $uri = $_SERVER["REQUEST_URI"];
-    echo $uri;
     foreach($routes as $path => $callback){
         if($path !== $uri) continue;
 
