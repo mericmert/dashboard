@@ -4,7 +4,7 @@
         or die(mysqli_error($dbconnect));
     $row = mysqli_fetch_assoc($query);
     $count = $row['count'];
-    $query_managers = mysqli_query($dbconnect, "SELECT COUNT(*) as 'count' FROM manager")
+    $query_managers = mysqli_query($dbconnect, "SELECT COUNT(*) as 'count' FROM managers")
         or die(mysqli_error($dbconnect));
     $row_managers = mysqli_fetch_assoc($query_managers);
     $count_managers = $row_managers['count'];
